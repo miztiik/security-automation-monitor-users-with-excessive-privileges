@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "invokingEvent": "{'configurationItemDiff':{'changedProperties':{},'changeType':'CREATE'},'configurationItem':{'relatedEvents':[],'relationships':[],'configuration':{'path':'/','userName':'non_comp_user','userId':'AIDAUR7KWXJQDRRD3RZGW','arn':'arn:aws:iam::111122223333:user/non_comp_user','createDate':'2020-01-03T14:21:48.000Z','userPolicyList':[{'policyName':'bad_policy','policyDocument':'%7B%0A%20%20%20%20%22Version%22%3A%20%222012-10-17%22%2C%0A%20%20%20%20%22Statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22Sid%22%3A%20%22VisualEditor0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22Effect%22%3A%20%22Allow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22Action%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22s3%3AGet%2A%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22s3%3AList%2A%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22Resource%22%3A%20%22%2A%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D'}],'groupList':[],'attachedManagedPolicies':[],'permissionsBoundary':null,'tags':[]},'supplementaryConfiguration':{},'tags':{},'configurationItemVersion':'1.3','configurationItemCaptureTime':'2020-01-03T14:32:54.943Z','configurationStateId':1578061974943,'awsAccountId':'111122223333','configurationItemStatus':'ResourceDiscovered','resourceType':'AWS::IAM::User','resourceId':'AIDAUR7KWXJQDRRD3RZGW','resourceName':'non_comp_user','ARN':'arn:aws:iam::111122223333:user/non_comp_user','awsRegion':'global','availabilityZone':'Not Applicable','configurationStateMd5Hash':'','resourceCreationTime':'2020-01-03T14:21:48.000Z'},'notificationCreationTime':'2020-01-03T14:32:55.214Z','messageType':'ConfigurationItemChangeNotification','recordVersion':'1.3'}",
+  "ruleParameters": "{}",
+  "resultToken": "=REDACTED=",
+  "eventLeftScope": "False",
+  "executionRoleArn": "arn:aws:iam::111122223333:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+  "configRuleArn": "arn:aws:config:us-east-1:111122223333:config-rule/config-rule-zef2ms",
+  "configRuleName": "monitor_users_with_excessive_privileges",
+  "configRuleId": "config-rule-zef2ms",
+  "accountId": "111122223333"
+}
