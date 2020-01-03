@@ -1,6 +1,6 @@
 # Security Automation: Monitor User with Excessive Privileges
 
- Identify user who might have `Action:*` permissions.
+ Identify IAM User[s] who might have `Action:['*']`  or `Resource:['*']` permissions.
 
    ![Security Automation: Monitor User with Excessive Privileges](images/miztiik_github_aws_config_monitor_user_with_excessive_privileges.png)
 
@@ -16,12 +16,15 @@
 
     # If you dont have venv installed already
     # pip install virtualenv
+
     python3 -m venv ${dir_name}
     cd ${dir_name}
     source bin/activate
     pip3 install rdk
+
     # Configure AWS Profile
     rdk init
+
     # Lets create a LOCAL rule
     rdk create ${custom_rule_name} --runtime python3.7 --resource-types AWS::IAM::User
     ```

@@ -148,6 +148,16 @@ def is_statements_include_full_star_allow(statements):
         else:
             if statement['Action'] == "*":
                 return True
+
+        # Check if Resource also has a "*"
+        if isinstance(statement['Resource'], list):
+            for res in statement['Resource']:
+                if res == "*":
+                    return True
+        else:
+            if statement['Resource'] == "*":
+                return True
+
     return False
 
 def evaluate_parameters(rule_parameters):

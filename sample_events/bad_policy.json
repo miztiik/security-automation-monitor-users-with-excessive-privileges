@@ -4,8 +4,14 @@
         {
             "Sid": "MysteriouslyBadPolicy",
             "Effect": "Allow",
-            "Action": "*",
+            "Action": "s3:Put*",
             "Resource": "arn:aws:s3:::a-processor-010"
+        },
+        {
+            "Sid": "MysteriouslyBadPolicy02",
+            "Effect": "Allow",
+            "Action": "s3:Get*",
+            "Resource": "*"
         }
     ]
 }
