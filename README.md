@@ -11,6 +11,8 @@
     Setup the custom rule. Make sure you have `AWS CLI` profile configured. You should have at [minimum these permissions](https://github.com/awslabs/aws-config-rdk/blob/master/policy/rdk-minimum-permissions.json) before executing below commands
 
     ```sh
+    git clone https://github.com/miztiik/security-automation-monitor-users-with-excessive-privileges.git
+    cd security-automation-monitor-users-with-excessive-privileges
     dir_name="mystique-infosec"
     custom_rule_name="monitor_users_with_excessive_privileges"
 
